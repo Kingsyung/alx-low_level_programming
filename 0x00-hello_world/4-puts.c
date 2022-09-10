@@ -1,12 +1,41 @@
-
 #include <stdio.h>
+
+
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
- *     */
+ *
+ *   * main - Ommit some alphabet
+ *
+ *     *
+ *
+ *       * Return: Always (Success)
+ *
+ *         */
+
 int main(void)
+
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+
+	        char c;
+
+
+		        for (c = 'a'; c <= 'z'; c++)
+
+				        {
+
+						                if (c != 'e' && c != 'q')
+
+									                {
+
+												                        putchar(c);
+
+															                }
+
+								        }
+
+
+			        putchar('\n');
+
+
+				        return (0);
+
 }
