@@ -17,25 +17,17 @@ int main(void)
 
 	        char c;
 
-
-		        for (c = 'a'; c <= 'z'; c++)
+    for (c = 'a'; c <= 'z'; c++)
 
 				        {
 
-						                if (c != 'e' && c != 'q')
-
+     if (c != 'e' && c != 'q')
 									                {
 
-												                        putchar(c);
-
+     puts char(c);
 															                }
-
-								        }
-
-
-			        putchar('\n');
-
-
-				        return (0);
+				       	}
+    puts char('\n');
+    return (0);
 
 }
