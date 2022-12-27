@@ -5,14 +5,13 @@
  * Return: always 0
  */
 int main(void)
-
 {
-	char c = 'a';
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	while (c <= 'z')
+	for (i = 0; i < 26; i++)
 	{
-		putchar(c);
-		c++;
+		putchar(alp[i]);
 	}
 	putchar('\n');
 	return (0);
