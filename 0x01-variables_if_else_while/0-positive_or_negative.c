@@ -6,6 +6,7 @@
  * main - print if n is positive, negative or 0
  * Return: 0
  */
+
 int main(void)
 {
 	int n;
@@ -13,17 +14,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (a > 0)
+	if (a < 0)
 	{
-		printf("%d is positive\n", n);
+		printf("%d is negative\n", n);
 	}
 	else if (a == 0)
 	{
 		printf("%d is zero\n", n);
 	}
-	else
+	else if (a > 0)
 	{
-		printf("%d is negative\n", n);
+		printf("%d is positive\n", n);
 	}
 		return (0);
 }
