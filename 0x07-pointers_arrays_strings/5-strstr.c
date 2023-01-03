@@ -11,22 +11,38 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *bhaystack;
-	char *pneedle;
-
-	while (*haystack != '\0')
+	while (*haystack)
 	{
-		haystack = haystack;
-		pneedle = needle;
-
-		while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
+		if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
+		{
+			return (haystack);
+		}
+		else
 		{
 			haystack++;
-			pneedle++;
 		}
-		if (!*pneedle)
-			return (bhaystack);
-		haystack = bhaystack + 1;
 	}
 	return (0);
+}
+
+/**
+ * coincidence - define if the string b is inside a.
+ * @a: source string
+ * @b: string to be searched
+ *
+ * Return: 1 if there is coincidence, otherwise 0.
+ */
+
+int coincidence(char *a, char *b)
+{
+
+	while (*b && *b == *a)
+	{
+		b++;
+		a++;
+	}
+	if (*b == '\0')
+		return (1);
+	else
+		return (0);
 }
