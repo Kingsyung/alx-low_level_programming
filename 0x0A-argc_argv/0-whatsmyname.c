@@ -1,20 +1,15 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+/**
+ * main -It prints its name, then a new line.
+ * @argc:gives  number of command lines arguments.
+ * @argv:The array that contains the program command line arguments.
+ * Return: 0 - success.
+ */
 
-    // Check to see if at least one command-line argument is made available
-   
-       	if (argc >= 1) {
-       
-	       	// Printing the name of the program (with path inclusive)
-       
-	       	printf("%s\n", argv[0]);
-   
-       	} else {
-        fprintf(stderr, "Error: No command-line arguments provided.\n");
-   
-       	}
-   
-       	return 0;
+int main(int argc __attribute__((unused)), char *argv[])
+{
+	printf("%s\n", argv[0]);
+	return (0);
 }
 
