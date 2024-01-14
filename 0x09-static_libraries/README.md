@@ -1,1 +1,2 @@
 Stattic Library
+Static Library
