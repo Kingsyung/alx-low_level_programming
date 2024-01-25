@@ -4,8 +4,8 @@
 #include <stdio.h>
 
 /**
- * print_all - A function prints anything.
- * @format: A list of type of arguments passed to the function.
+ * print_all - It is a function that  prints anything.
+ * @format: This a  list of type of arguments passed to the function.
  * Return: Nothing
  */
 void print_all(const char * const format, ...)
