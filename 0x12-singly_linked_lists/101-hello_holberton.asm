@@ -1,6 +1,6 @@
-global    main
+global     main
 
-          extern    printf
+           extern    printf
 
 main:
 
